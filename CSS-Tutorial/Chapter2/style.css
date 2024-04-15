@@ -1,0 +1,59 @@
+/* 通用选择器
+* {
+    font-family: monospace;
+    实际选中了所有元素
+    border: 1px solid red;
+} */
+
+/* 字体与排版相关的内容将被继承（颜色、行高、对齐等） */
+body {
+    font-size: 22px;
+
+    /* 不会被继承
+    border: 1px solid red; */
+}
+
+main {
+    font-family: monospace;
+}
+
+/* 表单元素不会继承字体与排版相关的内容 */
+button, input, textarea, select {
+    font: inherit
+}
+
+/* 分组选择器 */
+h1, h2 {
+    color: blue;
+}
+
+/* 元素选择器 */
+p {
+    color: purple;
+}
+
+p {
+    color: red;
+}
+
+
+/* 类选择器 */
+.highlight {
+    text-transform: uppercase;
+    background-color: gold;
+}
+/* 
+上面例子更好
+p span {
+    text-transform: uppercase;
+    background-color: gold;
+} */
+
+.gray {
+    color: gray;
+}
+
+/* id选择器：避免使用 */
+#second {
+    font-style: italic;
+}

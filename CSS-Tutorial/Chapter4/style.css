@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* vh: 视口高度的 1% */
+    min-height: 100vh;
+}
+
+main {
+    font-size: 2rem;
+}
+
+p {
+    /* rem: 根元素的字体大小 */
+    font-size: 2rem;
+    /* ch: 表示相对于“0”的宽度的字符数。 */
+    /* 一个 ch 等于当前字体设置下数字字符 0 的宽度。 */
+    /* 一般而言，ch 单位用于根据字符宽度来确定元素的大小。 */
+    width: 40ch;
+}
+
+h1 {
+    border: 2px dashed red;
+    width: 50%;
+    font-size: 3rem;
+    /* 在 font-size 中使用是相对于父元素的字体大小， */
+    /* 在其他属性中使用是相对于自身的字体大小，如 width。 */
+    /* (16 * 3) / 2 = 24 */
+    padding: 0.5em; 
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CatPhotoApp</title>
+</head>
+<body>
+    <h2>CatPhotoApp</h2>
+    <main>
+        <h3>Cat Photos</h3>
+        <!-- TODO: Add link to cat photos -->
+        <p>
+            Click here to view more 
+            <a href="#" target="_blank">cat photos</a>.
+        </p>
+    
+        <a href="#">
+            <!-- 浏览器无法加载图像时会显示 alt 属性中的文本 -->
+            <img
+                src="https://cdn.freecodecamp.org/youtube/html-course/cats.jpg"
+                alt="A cute orange cat lying on its back."
+            >
+        </a>
+        <h3>Cat Lists</h3>
+        <div class="lists">
+            <!-- em: 强调(emphasis)元素 -->
+            <p>Things cats <em>love</em>:</p>
+            <ul>
+                <li>cat nip</li>
+                <li>laser pointers</li>
+                <li>lasagna</li>
+            </ul>
+            <img src="lasagna.jpeg" alt="Lasagna">
+            <!-- strong: 表示文本十分重要，一般用粗体显示 -->
+            <p>THings cats <strong>hate</strong>:</p>
+            <ol>
+                <li>flea treatment</li>
+                <li>thunder</li>
+                <li>other cats</li>
+            </ol>
+        </div>
+        <img src="cats.jpeg" alt="Cats">
+        <form action="/submit-cat-photo">
+            <!-- for 属性是用来建立该标签与表单元素之间的关联的。 -->
+            <!-- 它的值应该是与要关联的表单元素的 id 属性相匹配的值。 -->
+            <!-- 这种关联的好处是，当用户点击标签时，浏览器会自动将焦点转移到相关的表单元素， -->
+            <!-- 从而改善用户体验，尤其是对于辅助技术用户来说。 -->
+            <label for="indoor">
+                <input id="indoor" type= "radio" name="indoor-outdoor" checked> Indoor
+            </label>
+            <br>
+            <label for="outdoor">
+                <input id="outdoor" type="radio" name="indoor-outdoor"> Lutdoor
+            </label>
+            <br>
+
+            <label for="loving">
+                <input id="loving" type="checkbox" name="personality" checked> Loving
+            </label>
+            <br>
+            <label for="lazy">
+                <input id="lazy" type="checkbox" name="personality"> Lazy
+            </label>
+            <br>
+            <label for="energetic">
+                <input id="energetic" type="checkbox" name="personality"> Energetic
+            </label>
+            <br>
+            <input type="text" placeholder="cat photo URL" required>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <!-- footer: 通常包含有关该部分作者、版权数据或相关文档链接的信息。 -->
+    <footer>
+        <p>
+            <!-- HTML5: small表示边注释和附属细则，包括版权和法律文本。 -->
+            <small>
+                No Copyright - <a href="https://freeCodeCamp.org">freeCodeCamp.org</a>
+            </small>
+        </p>
+    </footer>
+</body>
+</html>
