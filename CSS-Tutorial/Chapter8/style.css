@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  padding: 5% 10%;
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+}
+
+ol {
+  list-style-type: lower-alpha;
+  /* list-style-type: georgian; */
+  /* list-style-type: decimal-leading-zero; */
+  /* list-style-type: disc; */
+  /* list-style-type: circle; */
+  /* list-style-type: upper-roman; */
+  /* list-style-type: lower-alpha; */
+  /* list-style-type: none; */
+  padding: 0
+}
+
+ul {
+  list-style-type: square;
+  text-align: center;
+  /* 属性用于设置列表项标记的位置，即列表标记（如项目符号或编号）相对于列表项的位置。 */
+  /* list-style-position: outside; */
+  /* outside：默认值。列表标记位于列表项文本之外，即列表项文本会向右缩进以给列表标记留出空间。
+  inside：列表标记位于列表项文本之内，即列表项文本不会缩进，而是与列表标记对齐。 */
+  list-style-position: inside;
+  color: #00f;
+  line-height: 1.6;
+  /* list-style-image: url('checkmark.png');
+  square 作为图片无法加载下的备用情况
+  list-style: square url('checkmark.png') inside; */
+}
+
+/* ul li:nth-child(2) {
+  color: red;
+} */
+/* ul li:nth-child(odd) {
+  color: red;
+} */
+ul li:nth-child(even) {
+  color: red;
+}
+
+ul ::marker {
+  color: red;
+  font-family: fantasy;
+  font-size: 1em;
+  content: 'Only $5 >> ';
+}
